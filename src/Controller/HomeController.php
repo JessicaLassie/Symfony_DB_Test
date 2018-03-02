@@ -14,6 +14,6 @@ class HomeController extends Controller
      */
     public function indexAction()
     {
-        return new Response("Hello symfony 4");
+        return $this->render("home/index.html.twig", []);
     }
 }
